@@ -2,6 +2,7 @@
 *.o
 *.so
 *.exe
+*.log
 /.depend
 /FIO-VERSION-FILE
 /config-host.h
@@ -34,3 +35,4 @@ doc/output
 /x64
 /x86
 /arm64
+/.vs

@@ -284,8 +284,6 @@
     <ClInclude Include="dedupe.h" />
     <ClInclude Include="diskutil.h" />
     <ClInclude Include="engines\gfapi.h" />
-    <ClInclude Include="engines\librpma_fio.h" />
-    <ClInclude Include="engines\librpma_gpspm_flush.pb-c.h" />
     <ClInclude Include="err.h" />
     <ClInclude Include="fifo.h" />
     <ClInclude Include="file.h" />
