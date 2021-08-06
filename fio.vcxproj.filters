@@ -1,0 +1,2077 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="backend.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="blktrace.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cairo_text_helpers.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cconv.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cgroup.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="client.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dedupe.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="diskutil.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="eta.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fifo.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="filehash.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="filelock.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="filesetup.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fio.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fio_sem.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="flow.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gclient.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gcompat.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gerror.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gettime-thread.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gettime.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gfio.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ghelpers.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="goptions.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="graph.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="helpers.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="helper_thread.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="idletime.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="init.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ioengines.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="iolog.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="io_u.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="io_u_queue.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="json.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libfio.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="log.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="memory.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="optgroup.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="options.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="parse.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="printing.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="profile.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pshared.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rate-submit.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rwlock.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="server.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="smalloc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stat.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="steadystate.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="td_error.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tickmarks.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="time.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="trim.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="verify.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="workqueue.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="zbd.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="zone-dist.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="crc\crc16.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="crc\crc32.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="crc\crc32c-arm64.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="crc\crc32c-intel.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="crc\crc32c.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="crc\crc64.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="crc\crc7.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="crc\fnv.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="crc\md5.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="crc\murmur3.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="crc\sha1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="crc\sha256.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="crc\sha3.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="crc\sha512.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="crc\test.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="crc\xxhash.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="engines\cpu.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="engines\dev-dax.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="engines\dfs.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="engines\e4defrag.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="engines\exec.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="engines\falloc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="engines\filecreate.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="engines\filedelete.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="engines\filestat.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="engines\ftruncate.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="engines\glusterfs.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="engines\glusterfs_async.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="engines\glusterfs_sync.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="engines\http.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="engines\ime.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="engines\io_uring.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="engines\libaio.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="engines\libcufile.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="engines\libhdfs.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="engines\libiscsi.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="engines\libpmem.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="engines\librpma_apm.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="engines\librpma_fio.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="engines\librpma_gpspm.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="engines\librpma_gpspm_flush.pb-c.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="engines\libzbc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="engines\mmap.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="engines\mtd.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="engines\nbd.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="engines\net.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="engines\nfs.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="engines\null.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="engines\pmemblk.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="engines\posixaio.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="engines\rados.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="engines\rbd.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="engines\rdma.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="engines\sg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="engines\skeleton_external.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="engines\solarisaio.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="engines\splice.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="engines\sync.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="engines\windowsaio.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="exp\test-expression-parser.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="getopt-for-windows\getopt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\axmap.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\bloom.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\flist_sort.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\gauss.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\getrusage.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\hweight.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\ieee754.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\lfsr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\memalign.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\memcpy.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\mountcheck.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\num2str.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\output_buffer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\pattern.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\prio_tree.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\rand.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\rbtree.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\strntol.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\zipf.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="os\windows\cpu-affinity.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="os\windows\posix.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="oslib\asprintf.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="oslib\getopt_long.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="oslib\inet_aton.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="oslib\libmtd.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="oslib\libmtd_legacy.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="oslib\linux-blkzoned.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="oslib\linux-dev-lookup.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="oslib\statx.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="oslib\strcasestr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="oslib\strlcat.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="oslib\strndup.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="oslib\strsep.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="profiles\act.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="profiles\tiobench.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\attr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\autostatic.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\barrier.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\cancel.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\cleanup.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\condvar.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\create.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\dll.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\errno.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\exit.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\fork.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\global.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\misc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\mutex.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\nonportable.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\private.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_attr_destroy.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_attr_getdetachstate.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_attr_getinheritsched.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_attr_getschedparam.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_attr_getschedpolicy.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_attr_getscope.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_attr_getstackaddr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_attr_getstacksize.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_attr_init.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_attr_setdetachstate.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_attr_setinheritsched.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_attr_setschedparam.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_attr_setschedpolicy.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_attr_setscope.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_attr_setstackaddr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_attr_setstacksize.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_barrierattr_destroy.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_barrierattr_getpshared.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_barrierattr_init.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_barrierattr_setpshared.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_barrier_destroy.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_barrier_init.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_barrier_wait.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_cancel.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_condattr_destroy.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_condattr_getpshared.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_condattr_init.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_condattr_setpshared.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_cond_destroy.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_cond_init.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_cond_signal.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_cond_wait.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_delay_np.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_detach.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_equal.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_exit.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_getconcurrency.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_getschedparam.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_getspecific.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_getunique_np.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_getw32threadhandle_np.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_join.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_key_create.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_key_delete.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_kill.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_mutexattr_destroy.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_mutexattr_getkind_np.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_mutexattr_getpshared.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_mutexattr_getrobust.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_mutexattr_gettype.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_mutexattr_init.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_mutexattr_setkind_np.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_mutexattr_setpshared.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_mutexattr_setrobust.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_mutexattr_settype.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_mutex_consistent.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_mutex_destroy.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_mutex_init.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_mutex_lock.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_mutex_timedlock.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_mutex_trylock.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_mutex_unlock.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_num_processors_np.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_once.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_rwlockattr_destroy.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_rwlockattr_getpshared.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_rwlockattr_init.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_rwlockattr_setpshared.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_rwlock_destroy.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_rwlock_init.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_rwlock_rdlock.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_rwlock_timedrdlock.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_rwlock_timedwrlock.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_rwlock_tryrdlock.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_rwlock_trywrlock.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_rwlock_unlock.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_rwlock_wrlock.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_self.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_setcancelstate.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_setcanceltype.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_setconcurrency.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_setschedparam.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_setspecific.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_spin_destroy.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_spin_init.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_spin_lock.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_spin_trylock.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_spin_unlock.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_testcancel.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_timechange_handler_np.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\pthread_win32_attach_detach_np.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\ptw32_calloc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\ptw32_callUserDestroyRoutines.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\ptw32_cond_check_need_init.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\ptw32_getprocessors.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\ptw32_is_attr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\ptw32_MCS_lock.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\ptw32_mutex_check_need_init.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\ptw32_new.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\ptw32_OLL_lock.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\ptw32_processInitialize.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\ptw32_processTerminate.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\ptw32_relmillisecs.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\ptw32_reuse.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\ptw32_rwlock_cancelwrwait.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\ptw32_rwlock_check_need_init.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\ptw32_semwait.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\ptw32_spinlock_check_need_init.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\ptw32_threadDestroy.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\ptw32_threadStart.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\ptw32_throw.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\ptw32_timespec.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\ptw32_tkAssocCreate.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\ptw32_tkAssocDestroy.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\rwlock.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\sched.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\sched_getscheduler.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\sched_get_priority_max.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\sched_get_priority_min.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\sched_setscheduler.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\sched_yield.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\semaphore.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\sem_close.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\sem_destroy.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\sem_getvalue.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\sem_init.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\sem_open.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\sem_post.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\sem_post_multiple.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\sem_timedwait.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\sem_trywait.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\sem_unlink.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\sem_wait.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\signal.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\spin.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\sync.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tsd.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\w32_CancelableWait.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\barrier1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\barrier2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\barrier3.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\barrier4.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\barrier5.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\barrier6.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\benchlib.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\benchtest1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\benchtest2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\benchtest3.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\benchtest4.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\benchtest5.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\cancel1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\cancel2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\cancel3.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\cancel4.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\cancel5.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\cancel6a.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\cancel6d.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\cancel7.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\cancel8.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\cancel9.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\cleanup0.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\cleanup1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\cleanup2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\cleanup3.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\condvar1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\condvar1_1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\condvar1_2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\condvar2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\condvar2_1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\condvar3.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\condvar3_1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\condvar3_2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\condvar3_3.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\condvar4.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\condvar5.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\condvar6.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\condvar7.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\condvar8.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\condvar9.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\context1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\count1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\create1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\create2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\create3.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\delay1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\delay2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\detach1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\equal1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\errno1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\exception1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\exception2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\exception3.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\exit1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\exit2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\exit3.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\exit4.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\exit5.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\eyal1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\inherit1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\join0.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\join1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\join2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\join3.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\kill1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\loadfree.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\mutex1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\mutex1e.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\mutex1n.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\mutex1r.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\mutex2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\mutex2e.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\mutex2r.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\mutex3.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\mutex3e.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\mutex3r.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\mutex4.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\mutex5.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\mutex6.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\mutex6e.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\mutex6es.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\mutex6n.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\mutex6r.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\mutex6rs.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\mutex6s.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\mutex7.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\mutex7e.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\mutex7n.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\mutex7r.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\mutex8.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\mutex8e.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\mutex8n.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\mutex8r.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\once1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\once2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\once3.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\once4.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\openmp1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\priority1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\priority2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\reuse1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\reuse2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\robust1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\robust2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\robust3.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\robust4.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\robust5.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\rwlock1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\rwlock2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\rwlock2_t.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\rwlock3.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\rwlock3_t.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\rwlock4.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\rwlock4_t.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\rwlock5.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\rwlock5_t.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\rwlock6.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\rwlock6_t.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\rwlock6_t2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\rwlock7.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\rwlock8.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\self1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\self2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\semaphore1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\semaphore2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\semaphore3.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\semaphore4.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\semaphore4t.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\semaphore5.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\sequence1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\sizes.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\spin1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\spin2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\spin3.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\spin4.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\stress1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\tryentercs.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\tryentercs2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\tsd1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\tsd2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\valid1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pthreads\tests\valid2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="simple-stdatomic-for-vs-clang\stdatomic.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="t\arch.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="t\axmap.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="t\btrace2fio.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="t\debug.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="t\dedupe.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="t\gen-rand.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="t\genzipf.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="t\ieee754.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="t\io_uring.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="t\lfsr-test.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="t\log.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="t\memlock.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="t\read-to-pipe-async.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="t\stest.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="t\time-test.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="t\verify-state.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="t\fuzz\fuzz_parseini.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="t\fuzz\onefile.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="unittests\unittest.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="unittests\lib\memalign.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="unittests\lib\num2str.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="unittests\lib\strntol.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="unittests\oslib\strcasestr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="unittests\oslib\strlcat.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="unittests\oslib\strndup.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="unittests\oslib\strsep.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="blktrace.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="blktrace_api.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cairo_text_helpers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cgroup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="client.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="debug.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dedupe.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="diskutil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="err.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fifo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="file.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="filehash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="filelock.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fio_sem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fio_time.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gclient.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gcompat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gerror.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gettime.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gfio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ghelpers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="goptions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graph.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="helpers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="helper_thread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="idletime.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ioengines.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="iolog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="io_ddir.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="io_u.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="io_u_queue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="json.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="log.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="minmax.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="optgroup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="options.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="parse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="printing.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="profile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pshared.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rate-submit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rwlock.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="server.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="smalloc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="steadystate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="td_error.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="thread_options.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tickmarks.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="trim.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="verify-state.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="verify.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="workqueue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="zbd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="zbd_types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="zone-dist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="arch\arch-aarch64.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="arch\arch-alpha.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="arch\arch-arm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="arch\arch-generic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="arch\arch-hppa.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="arch\arch-ia64.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="arch\arch-mips.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="arch\arch-ppc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="arch\arch-s390.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="arch\arch-sh.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="arch\arch-sparc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="arch\arch-sparc64.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="arch\arch-x86-common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="arch\arch-x86.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="arch\arch-x86_64.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="arch\arch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="compiler\compiler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="crc\crc16.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="crc\crc32.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="crc\crc32c.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="crc\crc64.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="crc\crc7.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="crc\fnv.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="crc\md5.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="crc\murmur3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="crc\sha1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="crc\sha256.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="crc\sha3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="crc\sha512.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="crc\test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="crc\xxhash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="engines\gfapi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="engines\librpma_fio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="engines\librpma_gpspm_flush.pb-c.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="getopt-for-windows\getopt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\axmap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\bloom.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\bswap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\ffz.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\fls.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gauss.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\getrusage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\hweight.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\ieee754.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\lfsr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\memalign.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\memcpy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\mountcheck.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\nowarn_snprintf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\num2str.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\output_buffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\pattern.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\pow2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\prio_tree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\rand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\rbtree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\roundup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\seqlock.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\strntol.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\zipf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="os\kcompat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="os\os-aix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="os\os-android.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="os\os-dragonfly.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="os\os-freebsd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="os\os-hpux.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="os\os-linux-syscall.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="os\os-linux.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="os\os-mac.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="os\os-netbsd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="os\os-openbsd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="os\os-solaris.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="os\os-windows-7.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="os\os-windows.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="os\os.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="os\linux\io_uring.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="os\windows\posix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="os\windows\posix\include\dirent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="os\windows\posix\include\dlfcn.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="os\windows\posix\include\libgen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="os\windows\posix\include\netdb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="os\windows\posix\include\poll.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="os\windows\posix\include\semaphore.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="os\windows\posix\include\syslog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="os\windows\posix\include\arpa\inet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="os\windows\posix\include\asm\types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="os\windows\posix\include\netinet\in.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="os\windows\posix\include\netinet\tcp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="os\windows\posix\include\sys\ioctl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="os\windows\posix\include\sys\ipc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="os\windows\posix\include\sys\mman.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="os\windows\posix\include\sys\resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="os\windows\posix\include\sys\shm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="os\windows\posix\include\sys\socket.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="os\windows\posix\include\sys\uio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="os\windows\posix\include\sys\un.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="os\windows\posix\include\sys\wait.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="oslib\asprintf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="oslib\blkzoned.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="oslib\getopt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="oslib\inet_aton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="oslib\libmtd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="oslib\libmtd_common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="oslib\libmtd_int.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="oslib\libmtd_xalloc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="oslib\linux-dev-lookup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="oslib\statx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="oslib\strcasestr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="oslib\strlcat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="oslib\strndup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="oslib\strsep.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pthreads\config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pthreads\context.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pthreads\implement.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pthreads\need_errno.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pthreads\pthread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pthreads\sched.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pthreads\semaphore.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pthreads\tests\benchtest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pthreads\tests\test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="simple-stdatomic-for-vs-clang\stdalign.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="simple-stdatomic-for-vs-clang\stdatomic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="simple-stdatomic-for-vs-clang\threads.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="t\debug.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="unittests\unittest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="pthreads\version.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pthreads\manual\index.html" />
+    <None Include="pthreads\manual\PortabilityIssues.html" />
+    <None Include="pthreads\manual\pthreadCancelableWait.html" />
+    <None Include="pthreads\manual\pthread_attr_init.html" />
+    <None Include="pthreads\manual\pthread_attr_setstackaddr.html" />
+    <None Include="pthreads\manual\pthread_attr_setstacksize.html" />
+    <None Include="pthreads\manual\pthread_barrierattr_init.html" />
+    <None Include="pthreads\manual\pthread_barrierattr_setpshared.html" />
+    <None Include="pthreads\manual\pthread_barrier_init.html" />
+    <None Include="pthreads\manual\pthread_barrier_wait.html" />
+    <None Include="pthreads\manual\pthread_cancel.html" />
+    <None Include="pthreads\manual\pthread_cleanup_push.html" />
+    <None Include="pthreads\manual\pthread_condattr_init.html" />
+    <None Include="pthreads\manual\pthread_condattr_setpshared.html" />
+    <None Include="pthreads\manual\pthread_cond_init.html" />
+    <None Include="pthreads\manual\pthread_create.html" />
+    <None Include="pthreads\manual\pthread_delay_np.html" />
+    <None Include="pthreads\manual\pthread_detach.html" />
+    <None Include="pthreads\manual\pthread_equal.html" />
+    <None Include="pthreads\manual\pthread_exit.html" />
+    <None Include="pthreads\manual\pthread_getunique_np.html" />
+    <None Include="pthreads\manual\pthread_getw32threadhandle_np.html" />
+    <None Include="pthreads\manual\pthread_join.html" />
+    <None Include="pthreads\manual\pthread_key_create.html" />
+    <None Include="pthreads\manual\pthread_kill.html" />
+    <None Include="pthreads\manual\pthread_mutexattr_init.html" />
+    <None Include="pthreads\manual\pthread_mutexattr_setpshared.html" />
+    <None Include="pthreads\manual\pthread_mutex_init.html" />
+    <None Include="pthreads\manual\pthread_num_processors_np.html" />
+    <None Include="pthreads\manual\pthread_once.html" />
+    <None Include="pthreads\manual\pthread_rwlockattr_init.html" />
+    <None Include="pthreads\manual\pthread_rwlockattr_setpshared.html" />
+    <None Include="pthreads\manual\pthread_rwlock_init.html" />
+    <None Include="pthreads\manual\pthread_rwlock_rdlock.html" />
+    <None Include="pthreads\manual\pthread_rwlock_timedrdlock.html" />
+    <None Include="pthreads\manual\pthread_rwlock_timedwrlock.html" />
+    <None Include="pthreads\manual\pthread_rwlock_unlock.html" />
+    <None Include="pthreads\manual\pthread_rwlock_wrlock.html" />
+    <None Include="pthreads\manual\pthread_self.html" />
+    <None Include="pthreads\manual\pthread_setcancelstate.html" />
+    <None Include="pthreads\manual\pthread_setcanceltype.html" />
+    <None Include="pthreads\manual\pthread_setconcurrency.html" />
+    <None Include="pthreads\manual\pthread_setschedparam.html" />
+    <None Include="pthreads\manual\pthread_spin_init.html" />
+    <None Include="pthreads\manual\pthread_spin_lock.html" />
+    <None Include="pthreads\manual\pthread_spin_unlock.html" />
+    <None Include="pthreads\manual\pthread_timechange_handler_np.html" />
+    <None Include="pthreads\manual\pthread_win32_attach_detach_np.html" />
+    <None Include="pthreads\manual\pthread_win32_test_features_np.html" />
+    <None Include="pthreads\manual\sched_getscheduler.html" />
+    <None Include="pthreads\manual\sched_get_priority_max.html" />
+    <None Include="pthreads\manual\sched_setscheduler.html" />
+    <None Include="pthreads\manual\sched_yield.html" />
+    <None Include="pthreads\manual\sem_init.html" />
+  </ItemGroup>
+</Project>

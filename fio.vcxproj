@@ -1,0 +1,831 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{63A02499-2C4D-4FE1-863E-74971BFC8503}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="backend.c" />
+    <ClCompile Include="blktrace.c" />
+    <ClCompile Include="cairo_text_helpers.c" />
+    <ClCompile Include="cconv.c" />
+    <ClCompile Include="cgroup.c" />
+    <ClCompile Include="client.c" />
+    <ClCompile Include="crc\crc16.c" />
+    <ClCompile Include="crc\crc32.c" />
+    <ClCompile Include="crc\crc32c-arm64.c" />
+    <ClCompile Include="crc\crc32c-intel.c" />
+    <ClCompile Include="crc\crc32c.c" />
+    <ClCompile Include="crc\crc64.c" />
+    <ClCompile Include="crc\crc7.c" />
+    <ClCompile Include="crc\fnv.c" />
+    <ClCompile Include="crc\md5.c" />
+    <ClCompile Include="crc\murmur3.c" />
+    <ClCompile Include="crc\sha1.c" />
+    <ClCompile Include="crc\sha256.c" />
+    <ClCompile Include="crc\sha3.c" />
+    <ClCompile Include="crc\sha512.c" />
+    <ClCompile Include="crc\test.c" />
+    <ClCompile Include="crc\xxhash.c" />
+    <ClCompile Include="debug.c" />
+    <ClCompile Include="dedupe.c" />
+    <ClCompile Include="diskutil.c" />
+    <ClCompile Include="engines\cpu.c" />
+    <ClCompile Include="engines\dev-dax.c" />
+    <ClCompile Include="engines\dfs.c" />
+    <ClCompile Include="engines\e4defrag.c" />
+    <ClCompile Include="engines\exec.c" />
+    <ClCompile Include="engines\falloc.c" />
+    <ClCompile Include="engines\filecreate.c" />
+    <ClCompile Include="engines\filedelete.c" />
+    <ClCompile Include="engines\filestat.c" />
+    <ClCompile Include="engines\ftruncate.c" />
+    <ClCompile Include="engines\glusterfs.c" />
+    <ClCompile Include="engines\glusterfs_async.c" />
+    <ClCompile Include="engines\glusterfs_sync.c" />
+    <ClCompile Include="engines\http.c" />
+    <ClCompile Include="engines\ime.c" />
+    <ClCompile Include="engines\io_uring.c" />
+    <ClCompile Include="engines\libaio.c" />
+    <ClCompile Include="engines\libcufile.c" />
+    <ClCompile Include="engines\libhdfs.c" />
+    <ClCompile Include="engines\libiscsi.c" />
+    <ClCompile Include="engines\libpmem.c" />
+    <ClCompile Include="engines\librpma_apm.c" />
+    <ClCompile Include="engines\librpma_fio.c" />
+    <ClCompile Include="engines\librpma_gpspm.c" />
+    <ClCompile Include="engines\librpma_gpspm_flush.pb-c.c" />
+    <ClCompile Include="engines\libzbc.c" />
+    <ClCompile Include="engines\mmap.c" />
+    <ClCompile Include="engines\mtd.c" />
+    <ClCompile Include="engines\nbd.c" />
+    <ClCompile Include="engines\net.c" />
+    <ClCompile Include="engines\nfs.c" />
+    <ClCompile Include="engines\null.c" />
+    <ClCompile Include="engines\pmemblk.c" />
+    <ClCompile Include="engines\posixaio.c" />
+    <ClCompile Include="engines\rados.c" />
+    <ClCompile Include="engines\rbd.c" />
+    <ClCompile Include="engines\rdma.c" />
+    <ClCompile Include="engines\sg.c" />
+    <ClCompile Include="engines\skeleton_external.c" />
+    <ClCompile Include="engines\solarisaio.c" />
+    <ClCompile Include="engines\splice.c" />
+    <ClCompile Include="engines\sync.c" />
+    <ClCompile Include="engines\windowsaio.c" />
+    <ClCompile Include="eta.c" />
+    <ClCompile Include="exp\test-expression-parser.c" />
+    <ClCompile Include="fifo.c" />
+    <ClCompile Include="filehash.c" />
+    <ClCompile Include="filelock.c" />
+    <ClCompile Include="filesetup.c" />
+    <ClCompile Include="fio.c" />
+    <ClCompile Include="fio_sem.c" />
+    <ClCompile Include="flow.c" />
+    <ClCompile Include="gclient.c" />
+    <ClCompile Include="gcompat.c" />
+    <ClCompile Include="gerror.c" />
+    <ClCompile Include="getopt-for-windows\getopt.c" />
+    <ClCompile Include="gettime-thread.c" />
+    <ClCompile Include="gettime.c" />
+    <ClCompile Include="gfio.c" />
+    <ClCompile Include="ghelpers.c" />
+    <ClCompile Include="goptions.c" />
+    <ClCompile Include="graph.c" />
+    <ClCompile Include="helpers.c" />
+    <ClCompile Include="helper_thread.c" />
+    <ClCompile Include="idletime.c" />
+    <ClCompile Include="init.c" />
+    <ClCompile Include="ioengines.c" />
+    <ClCompile Include="iolog.c" />
+    <ClCompile Include="io_u.c" />
+    <ClCompile Include="io_u_queue.c" />
+    <ClCompile Include="json.c" />
+    <ClCompile Include="libfio.c" />
+    <ClCompile Include="lib\axmap.c" />
+    <ClCompile Include="lib\bloom.c" />
+    <ClCompile Include="lib\flist_sort.c" />
+    <ClCompile Include="lib\gauss.c" />
+    <ClCompile Include="lib\getrusage.c" />
+    <ClCompile Include="lib\hweight.c" />
+    <ClCompile Include="lib\ieee754.c" />
+    <ClCompile Include="lib\lfsr.c" />
+    <ClCompile Include="lib\memalign.c" />
+    <ClCompile Include="lib\memcpy.c" />
+    <ClCompile Include="lib\mountcheck.c" />
+    <ClCompile Include="lib\num2str.c" />
+    <ClCompile Include="lib\output_buffer.c" />
+    <ClCompile Include="lib\pattern.c" />
+    <ClCompile Include="lib\prio_tree.c" />
+    <ClCompile Include="lib\rand.c" />
+    <ClCompile Include="lib\rbtree.c" />
+    <ClCompile Include="lib\strntol.c" />
+    <ClCompile Include="lib\zipf.c" />
+    <ClCompile Include="log.c" />
+    <ClCompile Include="memory.c" />
+    <ClCompile Include="optgroup.c" />
+    <ClCompile Include="options.c" />
+    <ClCompile Include="oslib\asprintf.c" />
+    <ClCompile Include="oslib\getopt_long.c" />
+    <ClCompile Include="oslib\inet_aton.c" />
+    <ClCompile Include="oslib\libmtd.c" />
+    <ClCompile Include="oslib\libmtd_legacy.c" />
+    <ClCompile Include="oslib\linux-blkzoned.c" />
+    <ClCompile Include="oslib\linux-dev-lookup.c" />
+    <ClCompile Include="oslib\statx.c" />
+    <ClCompile Include="oslib\strcasestr.c" />
+    <ClCompile Include="oslib\strlcat.c" />
+    <ClCompile Include="oslib\strndup.c" />
+    <ClCompile Include="oslib\strsep.c" />
+    <ClCompile Include="os\windows\cpu-affinity.c" />
+    <ClCompile Include="os\windows\posix.c" />
+    <ClCompile Include="parse.c" />
+    <ClCompile Include="printing.c" />
+    <ClCompile Include="profile.c" />
+    <ClCompile Include="profiles\act.c" />
+    <ClCompile Include="profiles\tiobench.c" />
+    <ClCompile Include="pshared.c" />
+    <ClCompile Include="pthreads\attr.c" />
+    <ClCompile Include="pthreads\autostatic.c" />
+    <ClCompile Include="pthreads\barrier.c" />
+    <ClCompile Include="pthreads\cancel.c" />
+    <ClCompile Include="pthreads\cleanup.c" />
+    <ClCompile Include="pthreads\condvar.c" />
+    <ClCompile Include="pthreads\create.c" />
+    <ClCompile Include="pthreads\dll.c" />
+    <ClCompile Include="pthreads\errno.c" />
+    <ClCompile Include="pthreads\exit.c" />
+    <ClCompile Include="pthreads\fork.c" />
+    <ClCompile Include="pthreads\global.c" />
+    <ClCompile Include="pthreads\misc.c" />
+    <ClCompile Include="pthreads\mutex.c" />
+    <ClCompile Include="pthreads\nonportable.c" />
+    <ClCompile Include="pthreads\private.c" />
+    <ClCompile Include="pthreads\pthread.c" />
+    <ClCompile Include="pthreads\pthread_attr_destroy.c" />
+    <ClCompile Include="pthreads\pthread_attr_getdetachstate.c" />
+    <ClCompile Include="pthreads\pthread_attr_getinheritsched.c" />
+    <ClCompile Include="pthreads\pthread_attr_getschedparam.c" />
+    <ClCompile Include="pthreads\pthread_attr_getschedpolicy.c" />
+    <ClCompile Include="pthreads\pthread_attr_getscope.c" />
+    <ClCompile Include="pthreads\pthread_attr_getstackaddr.c" />
+    <ClCompile Include="pthreads\pthread_attr_getstacksize.c" />
+    <ClCompile Include="pthreads\pthread_attr_init.c" />
+    <ClCompile Include="pthreads\pthread_attr_setdetachstate.c" />
+    <ClCompile Include="pthreads\pthread_attr_setinheritsched.c" />
+    <ClCompile Include="pthreads\pthread_attr_setschedparam.c" />
+    <ClCompile Include="pthreads\pthread_attr_setschedpolicy.c" />
+    <ClCompile Include="pthreads\pthread_attr_setscope.c" />
+    <ClCompile Include="pthreads\pthread_attr_setstackaddr.c" />
+    <ClCompile Include="pthreads\pthread_attr_setstacksize.c" />
+    <ClCompile Include="pthreads\pthread_barrierattr_destroy.c" />
+    <ClCompile Include="pthreads\pthread_barrierattr_getpshared.c" />
+    <ClCompile Include="pthreads\pthread_barrierattr_init.c" />
+    <ClCompile Include="pthreads\pthread_barrierattr_setpshared.c" />
+    <ClCompile Include="pthreads\pthread_barrier_destroy.c" />
+    <ClCompile Include="pthreads\pthread_barrier_init.c" />
+    <ClCompile Include="pthreads\pthread_barrier_wait.c" />
+    <ClCompile Include="pthreads\pthread_cancel.c" />
+    <ClCompile Include="pthreads\pthread_condattr_destroy.c" />
+    <ClCompile Include="pthreads\pthread_condattr_getpshared.c" />
+    <ClCompile Include="pthreads\pthread_condattr_init.c" />
+    <ClCompile Include="pthreads\pthread_condattr_setpshared.c" />
+    <ClCompile Include="pthreads\pthread_cond_destroy.c" />
+    <ClCompile Include="pthreads\pthread_cond_init.c" />
+    <ClCompile Include="pthreads\pthread_cond_signal.c" />
+    <ClCompile Include="pthreads\pthread_cond_wait.c" />
+    <ClCompile Include="pthreads\pthread_delay_np.c" />
+    <ClCompile Include="pthreads\pthread_detach.c" />
+    <ClCompile Include="pthreads\pthread_equal.c" />
+    <ClCompile Include="pthreads\pthread_exit.c" />
+    <ClCompile Include="pthreads\pthread_getconcurrency.c" />
+    <ClCompile Include="pthreads\pthread_getschedparam.c" />
+    <ClCompile Include="pthreads\pthread_getspecific.c" />
+    <ClCompile Include="pthreads\pthread_getunique_np.c" />
+    <ClCompile Include="pthreads\pthread_getw32threadhandle_np.c" />
+    <ClCompile Include="pthreads\pthread_join.c" />
+    <ClCompile Include="pthreads\pthread_key_create.c" />
+    <ClCompile Include="pthreads\pthread_key_delete.c" />
+    <ClCompile Include="pthreads\pthread_kill.c" />
+    <ClCompile Include="pthreads\pthread_mutexattr_destroy.c" />
+    <ClCompile Include="pthreads\pthread_mutexattr_getkind_np.c" />
+    <ClCompile Include="pthreads\pthread_mutexattr_getpshared.c" />
+    <ClCompile Include="pthreads\pthread_mutexattr_getrobust.c" />
+    <ClCompile Include="pthreads\pthread_mutexattr_gettype.c" />
+    <ClCompile Include="pthreads\pthread_mutexattr_init.c" />
+    <ClCompile Include="pthreads\pthread_mutexattr_setkind_np.c" />
+    <ClCompile Include="pthreads\pthread_mutexattr_setpshared.c" />
+    <ClCompile Include="pthreads\pthread_mutexattr_setrobust.c" />
+    <ClCompile Include="pthreads\pthread_mutexattr_settype.c" />
+    <ClCompile Include="pthreads\pthread_mutex_consistent.c" />
+    <ClCompile Include="pthreads\pthread_mutex_destroy.c" />
+    <ClCompile Include="pthreads\pthread_mutex_init.c" />
+    <ClCompile Include="pthreads\pthread_mutex_lock.c" />
+    <ClCompile Include="pthreads\pthread_mutex_timedlock.c" />
+    <ClCompile Include="pthreads\pthread_mutex_trylock.c" />
+    <ClCompile Include="pthreads\pthread_mutex_unlock.c" />
+    <ClCompile Include="pthreads\pthread_num_processors_np.c" />
+    <ClCompile Include="pthreads\pthread_once.c" />
+    <ClCompile Include="pthreads\pthread_rwlockattr_destroy.c" />
+    <ClCompile Include="pthreads\pthread_rwlockattr_getpshared.c" />
+    <ClCompile Include="pthreads\pthread_rwlockattr_init.c" />
+    <ClCompile Include="pthreads\pthread_rwlockattr_setpshared.c" />
+    <ClCompile Include="pthreads\pthread_rwlock_destroy.c" />
+    <ClCompile Include="pthreads\pthread_rwlock_init.c" />
+    <ClCompile Include="pthreads\pthread_rwlock_rdlock.c" />
+    <ClCompile Include="pthreads\pthread_rwlock_timedrdlock.c" />
+    <ClCompile Include="pthreads\pthread_rwlock_timedwrlock.c" />
+    <ClCompile Include="pthreads\pthread_rwlock_tryrdlock.c" />
+    <ClCompile Include="pthreads\pthread_rwlock_trywrlock.c" />
+    <ClCompile Include="pthreads\pthread_rwlock_unlock.c" />
+    <ClCompile Include="pthreads\pthread_rwlock_wrlock.c" />
+    <ClCompile Include="pthreads\pthread_self.c" />
+    <ClCompile Include="pthreads\pthread_setcancelstate.c" />
+    <ClCompile Include="pthreads\pthread_setcanceltype.c" />
+    <ClCompile Include="pthreads\pthread_setconcurrency.c" />
+    <ClCompile Include="pthreads\pthread_setschedparam.c" />
+    <ClCompile Include="pthreads\pthread_setspecific.c" />
+    <ClCompile Include="pthreads\pthread_spin_destroy.c" />
+    <ClCompile Include="pthreads\pthread_spin_init.c" />
+    <ClCompile Include="pthreads\pthread_spin_lock.c" />
+    <ClCompile Include="pthreads\pthread_spin_trylock.c" />
+    <ClCompile Include="pthreads\pthread_spin_unlock.c" />
+    <ClCompile Include="pthreads\pthread_testcancel.c" />
+    <ClCompile Include="pthreads\pthread_timechange_handler_np.c" />
+    <ClCompile Include="pthreads\pthread_win32_attach_detach_np.c" />
+    <ClCompile Include="pthreads\ptw32_calloc.c" />
+    <ClCompile Include="pthreads\ptw32_callUserDestroyRoutines.c" />
+    <ClCompile Include="pthreads\ptw32_cond_check_need_init.c" />
+    <ClCompile Include="pthreads\ptw32_getprocessors.c" />
+    <ClCompile Include="pthreads\ptw32_is_attr.c" />
+    <ClCompile Include="pthreads\ptw32_MCS_lock.c" />
+    <ClCompile Include="pthreads\ptw32_mutex_check_need_init.c" />
+    <ClCompile Include="pthreads\ptw32_new.c" />
+    <ClCompile Include="pthreads\ptw32_OLL_lock.c" />
+    <ClCompile Include="pthreads\ptw32_processInitialize.c" />
+    <ClCompile Include="pthreads\ptw32_processTerminate.c" />
+    <ClCompile Include="pthreads\ptw32_relmillisecs.c" />
+    <ClCompile Include="pthreads\ptw32_reuse.c" />
+    <ClCompile Include="pthreads\ptw32_rwlock_cancelwrwait.c" />
+    <ClCompile Include="pthreads\ptw32_rwlock_check_need_init.c" />
+    <ClCompile Include="pthreads\ptw32_semwait.c" />
+    <ClCompile Include="pthreads\ptw32_spinlock_check_need_init.c" />
+    <ClCompile Include="pthreads\ptw32_threadDestroy.c" />
+    <ClCompile Include="pthreads\ptw32_threadStart.c" />
+    <ClCompile Include="pthreads\ptw32_throw.c" />
+    <ClCompile Include="pthreads\ptw32_timespec.c" />
+    <ClCompile Include="pthreads\ptw32_tkAssocCreate.c" />
+    <ClCompile Include="pthreads\ptw32_tkAssocDestroy.c" />
+    <ClCompile Include="pthreads\rwlock.c" />
+    <ClCompile Include="pthreads\sched.c" />
+    <ClCompile Include="pthreads\sched_getscheduler.c" />
+    <ClCompile Include="pthreads\sched_get_priority_max.c" />
+    <ClCompile Include="pthreads\sched_get_priority_min.c" />
+    <ClCompile Include="pthreads\sched_setscheduler.c" />
+    <ClCompile Include="pthreads\sched_yield.c" />
+    <ClCompile Include="pthreads\semaphore.c" />
+    <ClCompile Include="pthreads\sem_close.c" />
+    <ClCompile Include="pthreads\sem_destroy.c" />
+    <ClCompile Include="pthreads\sem_getvalue.c" />
+    <ClCompile Include="pthreads\sem_init.c" />
+    <ClCompile Include="pthreads\sem_open.c" />
+    <ClCompile Include="pthreads\sem_post.c" />
+    <ClCompile Include="pthreads\sem_post_multiple.c" />
+    <ClCompile Include="pthreads\sem_timedwait.c" />
+    <ClCompile Include="pthreads\sem_trywait.c" />
+    <ClCompile Include="pthreads\sem_unlink.c" />
+    <ClCompile Include="pthreads\sem_wait.c" />
+    <ClCompile Include="pthreads\signal.c" />
+    <ClCompile Include="pthreads\spin.c" />
+    <ClCompile Include="pthreads\sync.c" />
+    <ClCompile Include="pthreads\tests\barrier1.c" />
+    <ClCompile Include="pthreads\tests\barrier2.c" />
+    <ClCompile Include="pthreads\tests\barrier3.c" />
+    <ClCompile Include="pthreads\tests\barrier4.c" />
+    <ClCompile Include="pthreads\tests\barrier5.c" />
+    <ClCompile Include="pthreads\tests\barrier6.c" />
+    <ClCompile Include="pthreads\tests\benchlib.c" />
+    <ClCompile Include="pthreads\tests\benchtest1.c" />
+    <ClCompile Include="pthreads\tests\benchtest2.c" />
+    <ClCompile Include="pthreads\tests\benchtest3.c" />
+    <ClCompile Include="pthreads\tests\benchtest4.c" />
+    <ClCompile Include="pthreads\tests\benchtest5.c" />
+    <ClCompile Include="pthreads\tests\cancel1.c" />
+    <ClCompile Include="pthreads\tests\cancel2.c" />
+    <ClCompile Include="pthreads\tests\cancel3.c" />
+    <ClCompile Include="pthreads\tests\cancel4.c" />
+    <ClCompile Include="pthreads\tests\cancel5.c" />
+    <ClCompile Include="pthreads\tests\cancel6a.c" />
+    <ClCompile Include="pthreads\tests\cancel6d.c" />
+    <ClCompile Include="pthreads\tests\cancel7.c" />
+    <ClCompile Include="pthreads\tests\cancel8.c" />
+    <ClCompile Include="pthreads\tests\cancel9.c" />
+    <ClCompile Include="pthreads\tests\cleanup0.c" />
+    <ClCompile Include="pthreads\tests\cleanup1.c" />
+    <ClCompile Include="pthreads\tests\cleanup2.c" />
+    <ClCompile Include="pthreads\tests\cleanup3.c" />
+    <ClCompile Include="pthreads\tests\condvar1.c" />
+    <ClCompile Include="pthreads\tests\condvar1_1.c" />
+    <ClCompile Include="pthreads\tests\condvar1_2.c" />
+    <ClCompile Include="pthreads\tests\condvar2.c" />
+    <ClCompile Include="pthreads\tests\condvar2_1.c" />
+    <ClCompile Include="pthreads\tests\condvar3.c" />
+    <ClCompile Include="pthreads\tests\condvar3_1.c" />
+    <ClCompile Include="pthreads\tests\condvar3_2.c" />
+    <ClCompile Include="pthreads\tests\condvar3_3.c" />
+    <ClCompile Include="pthreads\tests\condvar4.c" />
+    <ClCompile Include="pthreads\tests\condvar5.c" />
+    <ClCompile Include="pthreads\tests\condvar6.c" />
+    <ClCompile Include="pthreads\tests\condvar7.c" />
+    <ClCompile Include="pthreads\tests\condvar8.c" />
+    <ClCompile Include="pthreads\tests\condvar9.c" />
+    <ClCompile Include="pthreads\tests\context1.c" />
+    <ClCompile Include="pthreads\tests\count1.c" />
+    <ClCompile Include="pthreads\tests\create1.c" />
+    <ClCompile Include="pthreads\tests\create2.c" />
+    <ClCompile Include="pthreads\tests\create3.c" />
+    <ClCompile Include="pthreads\tests\delay1.c" />
+    <ClCompile Include="pthreads\tests\delay2.c" />
+    <ClCompile Include="pthreads\tests\detach1.c" />
+    <ClCompile Include="pthreads\tests\equal1.c" />
+    <ClCompile Include="pthreads\tests\errno1.c" />
+    <ClCompile Include="pthreads\tests\exception1.c" />
+    <ClCompile Include="pthreads\tests\exception2.c" />
+    <ClCompile Include="pthreads\tests\exception3.c" />
+    <ClCompile Include="pthreads\tests\exit1.c" />
+    <ClCompile Include="pthreads\tests\exit2.c" />
+    <ClCompile Include="pthreads\tests\exit3.c" />
+    <ClCompile Include="pthreads\tests\exit4.c" />
+    <ClCompile Include="pthreads\tests\exit5.c" />
+    <ClCompile Include="pthreads\tests\eyal1.c" />
+    <ClCompile Include="pthreads\tests\inherit1.c" />
+    <ClCompile Include="pthreads\tests\join0.c" />
+    <ClCompile Include="pthreads\tests\join1.c" />
+    <ClCompile Include="pthreads\tests\join2.c" />
+    <ClCompile Include="pthreads\tests\join3.c" />
+    <ClCompile Include="pthreads\tests\kill1.c" />
+    <ClCompile Include="pthreads\tests\loadfree.c" />
+    <ClCompile Include="pthreads\tests\mutex1.c" />
+    <ClCompile Include="pthreads\tests\mutex1e.c" />
+    <ClCompile Include="pthreads\tests\mutex1n.c" />
+    <ClCompile Include="pthreads\tests\mutex1r.c" />
+    <ClCompile Include="pthreads\tests\mutex2.c" />
+    <ClCompile Include="pthreads\tests\mutex2e.c" />
+    <ClCompile Include="pthreads\tests\mutex2r.c" />
+    <ClCompile Include="pthreads\tests\mutex3.c" />
+    <ClCompile Include="pthreads\tests\mutex3e.c" />
+    <ClCompile Include="pthreads\tests\mutex3r.c" />
+    <ClCompile Include="pthreads\tests\mutex4.c" />
+    <ClCompile Include="pthreads\tests\mutex5.c" />
+    <ClCompile Include="pthreads\tests\mutex6.c" />
+    <ClCompile Include="pthreads\tests\mutex6e.c" />
+    <ClCompile Include="pthreads\tests\mutex6es.c" />
+    <ClCompile Include="pthreads\tests\mutex6n.c" />
+    <ClCompile Include="pthreads\tests\mutex6r.c" />
+    <ClCompile Include="pthreads\tests\mutex6rs.c" />
+    <ClCompile Include="pthreads\tests\mutex6s.c" />
+    <ClCompile Include="pthreads\tests\mutex7.c" />
+    <ClCompile Include="pthreads\tests\mutex7e.c" />
+    <ClCompile Include="pthreads\tests\mutex7n.c" />
+    <ClCompile Include="pthreads\tests\mutex7r.c" />
+    <ClCompile Include="pthreads\tests\mutex8.c" />
+    <ClCompile Include="pthreads\tests\mutex8e.c" />
+    <ClCompile Include="pthreads\tests\mutex8n.c" />
+    <ClCompile Include="pthreads\tests\mutex8r.c" />
+    <ClCompile Include="pthreads\tests\once1.c" />
+    <ClCompile Include="pthreads\tests\once2.c" />
+    <ClCompile Include="pthreads\tests\once3.c" />
+    <ClCompile Include="pthreads\tests\once4.c" />
+    <ClCompile Include="pthreads\tests\openmp1.c" />
+    <ClCompile Include="pthreads\tests\priority1.c" />
+    <ClCompile Include="pthreads\tests\priority2.c" />
+    <ClCompile Include="pthreads\tests\reuse1.c" />
+    <ClCompile Include="pthreads\tests\reuse2.c" />
+    <ClCompile Include="pthreads\tests\robust1.c" />
+    <ClCompile Include="pthreads\tests\robust2.c" />
+    <ClCompile Include="pthreads\tests\robust3.c" />
+    <ClCompile Include="pthreads\tests\robust4.c" />
+    <ClCompile Include="pthreads\tests\robust5.c" />
+    <ClCompile Include="pthreads\tests\rwlock1.c" />
+    <ClCompile Include="pthreads\tests\rwlock2.c" />
+    <ClCompile Include="pthreads\tests\rwlock2_t.c" />
+    <ClCompile Include="pthreads\tests\rwlock3.c" />
+    <ClCompile Include="pthreads\tests\rwlock3_t.c" />
+    <ClCompile Include="pthreads\tests\rwlock4.c" />
+    <ClCompile Include="pthreads\tests\rwlock4_t.c" />
+    <ClCompile Include="pthreads\tests\rwlock5.c" />
+    <ClCompile Include="pthreads\tests\rwlock5_t.c" />
+    <ClCompile Include="pthreads\tests\rwlock6.c" />
+    <ClCompile Include="pthreads\tests\rwlock6_t.c" />
+    <ClCompile Include="pthreads\tests\rwlock6_t2.c" />
+    <ClCompile Include="pthreads\tests\rwlock7.c" />
+    <ClCompile Include="pthreads\tests\rwlock8.c" />
+    <ClCompile Include="pthreads\tests\self1.c" />
+    <ClCompile Include="pthreads\tests\self2.c" />
+    <ClCompile Include="pthreads\tests\semaphore1.c" />
+    <ClCompile Include="pthreads\tests\semaphore2.c" />
+    <ClCompile Include="pthreads\tests\semaphore3.c" />
+    <ClCompile Include="pthreads\tests\semaphore4.c" />
+    <ClCompile Include="pthreads\tests\semaphore4t.c" />
+    <ClCompile Include="pthreads\tests\semaphore5.c" />
+    <ClCompile Include="pthreads\tests\sequence1.c" />
+    <ClCompile Include="pthreads\tests\sizes.c" />
+    <ClCompile Include="pthreads\tests\spin1.c" />
+    <ClCompile Include="pthreads\tests\spin2.c" />
+    <ClCompile Include="pthreads\tests\spin3.c" />
+    <ClCompile Include="pthreads\tests\spin4.c" />
+    <ClCompile Include="pthreads\tests\stress1.c" />
+    <ClCompile Include="pthreads\tests\tryentercs.c" />
+    <ClCompile Include="pthreads\tests\tryentercs2.c" />
+    <ClCompile Include="pthreads\tests\tsd1.c" />
+    <ClCompile Include="pthreads\tests\tsd2.c" />
+    <ClCompile Include="pthreads\tests\valid1.c" />
+    <ClCompile Include="pthreads\tests\valid2.c" />
+    <ClCompile Include="pthreads\tsd.c" />
+    <ClCompile Include="pthreads\w32_CancelableWait.c" />
+    <ClCompile Include="rate-submit.c" />
+    <ClCompile Include="rwlock.c" />
+    <ClCompile Include="server.c" />
+    <ClCompile Include="simple-stdatomic-for-vs-clang\stdatomic.c" />
+    <ClCompile Include="smalloc.c" />
+    <ClCompile Include="stat.c" />
+    <ClCompile Include="steadystate.c" />
+    <ClCompile Include="td_error.c" />
+    <ClCompile Include="tickmarks.c" />
+    <ClCompile Include="time.c" />
+    <ClCompile Include="trim.c" />
+    <ClCompile Include="t\arch.c" />
+    <ClCompile Include="t\axmap.c" />
+    <ClCompile Include="t\btrace2fio.c" />
+    <ClCompile Include="t\debug.c" />
+    <ClCompile Include="t\dedupe.c" />
+    <ClCompile Include="t\fuzz\fuzz_parseini.c" />
+    <ClCompile Include="t\fuzz\onefile.c" />
+    <ClCompile Include="t\gen-rand.c" />
+    <ClCompile Include="t\genzipf.c" />
+    <ClCompile Include="t\ieee754.c" />
+    <ClCompile Include="t\io_uring.c" />
+    <ClCompile Include="t\lfsr-test.c" />
+    <ClCompile Include="t\log.c" />
+    <ClCompile Include="t\memlock.c" />
+    <ClCompile Include="t\read-to-pipe-async.c" />
+    <ClCompile Include="t\stest.c" />
+    <ClCompile Include="t\time-test.c" />
+    <ClCompile Include="t\verify-state.c" />
+    <ClCompile Include="unittests\lib\memalign.c" />
+    <ClCompile Include="unittests\lib\num2str.c" />
+    <ClCompile Include="unittests\lib\strntol.c" />
+    <ClCompile Include="unittests\oslib\strcasestr.c" />
+    <ClCompile Include="unittests\oslib\strlcat.c" />
+    <ClCompile Include="unittests\oslib\strndup.c" />
+    <ClCompile Include="unittests\oslib\strsep.c" />
+    <ClCompile Include="unittests\unittest.c" />
+    <ClCompile Include="verify.c" />
+    <ClCompile Include="workqueue.c" />
+    <ClCompile Include="zbd.c" />
+    <ClCompile Include="zone-dist.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="arch\arch-aarch64.h" />
+    <ClInclude Include="arch\arch-alpha.h" />
+    <ClInclude Include="arch\arch-arm.h" />
+    <ClInclude Include="arch\arch-generic.h" />
+    <ClInclude Include="arch\arch-hppa.h" />
+    <ClInclude Include="arch\arch-ia64.h" />
+    <ClInclude Include="arch\arch-mips.h" />
+    <ClInclude Include="arch\arch-ppc.h" />
+    <ClInclude Include="arch\arch-s390.h" />
+    <ClInclude Include="arch\arch-sh.h" />
+    <ClInclude Include="arch\arch-sparc.h" />
+    <ClInclude Include="arch\arch-sparc64.h" />
+    <ClInclude Include="arch\arch-x86-common.h" />
+    <ClInclude Include="arch\arch-x86.h" />
+    <ClInclude Include="arch\arch-x86_64.h" />
+    <ClInclude Include="arch\arch.h" />
+    <ClInclude Include="blktrace.h" />
+    <ClInclude Include="blktrace_api.h" />
+    <ClInclude Include="cairo_text_helpers.h" />
+    <ClInclude Include="cgroup.h" />
+    <ClInclude Include="client.h" />
+    <ClInclude Include="compiler\compiler.h" />
+    <ClInclude Include="crc\crc16.h" />
+    <ClInclude Include="crc\crc32.h" />
+    <ClInclude Include="crc\crc32c.h" />
+    <ClInclude Include="crc\crc64.h" />
+    <ClInclude Include="crc\crc7.h" />
+    <ClInclude Include="crc\fnv.h" />
+    <ClInclude Include="crc\md5.h" />
+    <ClInclude Include="crc\murmur3.h" />
+    <ClInclude Include="crc\sha1.h" />
+    <ClInclude Include="crc\sha256.h" />
+    <ClInclude Include="crc\sha3.h" />
+    <ClInclude Include="crc\sha512.h" />
+    <ClInclude Include="crc\test.h" />
+    <ClInclude Include="crc\xxhash.h" />
+    <ClInclude Include="debug.h" />
+    <ClInclude Include="dedupe.h" />
+    <ClInclude Include="diskutil.h" />
+    <ClInclude Include="engines\gfapi.h" />
+    <ClInclude Include="engines\librpma_fio.h" />
+    <ClInclude Include="engines\librpma_gpspm_flush.pb-c.h" />
+    <ClInclude Include="err.h" />
+    <ClInclude Include="fifo.h" />
+    <ClInclude Include="file.h" />
+    <ClInclude Include="filehash.h" />
+    <ClInclude Include="filelock.h" />
+    <ClInclude Include="fio.h" />
+    <ClInclude Include="fio_sem.h" />
+    <ClInclude Include="fio_time.h" />
+    <ClInclude Include="flist.h" />
+    <ClInclude Include="flow.h" />
+    <ClInclude Include="gclient.h" />
+    <ClInclude Include="gcompat.h" />
+    <ClInclude Include="gerror.h" />
+    <ClInclude Include="getopt-for-windows\getopt.h" />
+    <ClInclude Include="gettime.h" />
+    <ClInclude Include="gfio.h" />
+    <ClInclude Include="ghelpers.h" />
+    <ClInclude Include="goptions.h" />
+    <ClInclude Include="graph.h" />
+    <ClInclude Include="hash.h" />
+    <ClInclude Include="helpers.h" />
+    <ClInclude Include="helper_thread.h" />
+    <ClInclude Include="idletime.h" />
+    <ClInclude Include="ioengines.h" />
+    <ClInclude Include="iolog.h" />
+    <ClInclude Include="io_ddir.h" />
+    <ClInclude Include="io_u.h" />
+    <ClInclude Include="io_u_queue.h" />
+    <ClInclude Include="json.h" />
+    <ClInclude Include="lib\axmap.h" />
+    <ClInclude Include="lib\bloom.h" />
+    <ClInclude Include="lib\bswap.h" />
+    <ClInclude Include="lib\ffz.h" />
+    <ClInclude Include="lib\fls.h" />
+    <ClInclude Include="lib\gauss.h" />
+    <ClInclude Include="lib\getrusage.h" />
+    <ClInclude Include="lib\hweight.h" />
+    <ClInclude Include="lib\ieee754.h" />
+    <ClInclude Include="lib\lfsr.h" />
+    <ClInclude Include="lib\memalign.h" />
+    <ClInclude Include="lib\memcpy.h" />
+    <ClInclude Include="lib\mountcheck.h" />
+    <ClInclude Include="lib\nowarn_snprintf.h" />
+    <ClInclude Include="lib\num2str.h" />
+    <ClInclude Include="lib\output_buffer.h" />
+    <ClInclude Include="lib\pattern.h" />
+    <ClInclude Include="lib\pow2.h" />
+    <ClInclude Include="lib\prio_tree.h" />
+    <ClInclude Include="lib\rand.h" />
+    <ClInclude Include="lib\rbtree.h" />
+    <ClInclude Include="lib\roundup.h" />
+    <ClInclude Include="lib\seqlock.h" />
+    <ClInclude Include="lib\strntol.h" />
+    <ClInclude Include="lib\types.h" />
+    <ClInclude Include="lib\zipf.h" />
+    <ClInclude Include="log.h" />
+    <ClInclude Include="minmax.h" />
+    <ClInclude Include="optgroup.h" />
+    <ClInclude Include="options.h" />
+    <ClInclude Include="oslib\asprintf.h" />
+    <ClInclude Include="oslib\blkzoned.h" />
+    <ClInclude Include="oslib\getopt.h" />
+    <ClInclude Include="oslib\inet_aton.h" />
+    <ClInclude Include="oslib\libmtd.h" />
+    <ClInclude Include="oslib\libmtd_common.h" />
+    <ClInclude Include="oslib\libmtd_int.h" />
+    <ClInclude Include="oslib\libmtd_xalloc.h" />
+    <ClInclude Include="oslib\linux-dev-lookup.h" />
+    <ClInclude Include="oslib\statx.h" />
+    <ClInclude Include="oslib\strcasestr.h" />
+    <ClInclude Include="oslib\strlcat.h" />
+    <ClInclude Include="oslib\strndup.h" />
+    <ClInclude Include="oslib\strsep.h" />
+    <ClInclude Include="os\kcompat.h" />
+    <ClInclude Include="os\linux\io_uring.h" />
+    <ClInclude Include="os\os-aix.h" />
+    <ClInclude Include="os\os-android.h" />
+    <ClInclude Include="os\os-dragonfly.h" />
+    <ClInclude Include="os\os-freebsd.h" />
+    <ClInclude Include="os\os-hpux.h" />
+    <ClInclude Include="os\os-linux-syscall.h" />
+    <ClInclude Include="os\os-linux.h" />
+    <ClInclude Include="os\os-mac.h" />
+    <ClInclude Include="os\os-netbsd.h" />
+    <ClInclude Include="os\os-openbsd.h" />
+    <ClInclude Include="os\os-solaris.h" />
+    <ClInclude Include="os\os-windows-7.h" />
+    <ClInclude Include="os\os-windows.h" />
+    <ClInclude Include="os\os.h" />
+    <ClInclude Include="os\windows\posix.h" />
+    <ClInclude Include="os\windows\posix\include\arpa\inet.h" />
+    <ClInclude Include="os\windows\posix\include\asm\types.h" />
+    <ClInclude Include="os\windows\posix\include\dirent.h" />
+    <ClInclude Include="os\windows\posix\include\dlfcn.h" />
+    <ClInclude Include="os\windows\posix\include\libgen.h" />
+    <ClInclude Include="os\windows\posix\include\netdb.h" />
+    <ClInclude Include="os\windows\posix\include\netinet\in.h" />
+    <ClInclude Include="os\windows\posix\include\netinet\tcp.h" />
+    <ClInclude Include="os\windows\posix\include\poll.h" />
+    <ClInclude Include="os\windows\posix\include\semaphore.h" />
+    <ClInclude Include="os\windows\posix\include\syslog.h" />
+    <ClInclude Include="os\windows\posix\include\sys\ioctl.h" />
+    <ClInclude Include="os\windows\posix\include\sys\ipc.h" />
+    <ClInclude Include="os\windows\posix\include\sys\mman.h" />
+    <ClInclude Include="os\windows\posix\include\sys\resource.h" />
+    <ClInclude Include="os\windows\posix\include\sys\shm.h" />
+    <ClInclude Include="os\windows\posix\include\sys\socket.h" />
+    <ClInclude Include="os\windows\posix\include\sys\uio.h" />
+    <ClInclude Include="os\windows\posix\include\sys\un.h" />
+    <ClInclude Include="os\windows\posix\include\sys\wait.h" />
+    <ClInclude Include="parse.h" />
+    <ClInclude Include="printing.h" />
+    <ClInclude Include="profile.h" />
+    <ClInclude Include="pshared.h" />
+    <ClInclude Include="pthreads\config.h" />
+    <ClInclude Include="pthreads\context.h" />
+    <ClInclude Include="pthreads\implement.h" />
+    <ClInclude Include="pthreads\need_errno.h" />
+    <ClInclude Include="pthreads\pthread.h" />
+    <ClInclude Include="pthreads\sched.h" />
+    <ClInclude Include="pthreads\semaphore.h" />
+    <ClInclude Include="pthreads\tests\benchtest.h" />
+    <ClInclude Include="pthreads\tests\test.h" />
+    <ClInclude Include="rate-submit.h" />
+    <ClInclude Include="rwlock.h" />
+    <ClInclude Include="server.h" />
+    <ClInclude Include="simple-stdatomic-for-vs-clang\stdalign.h" />
+    <ClInclude Include="simple-stdatomic-for-vs-clang\stdatomic.h" />
+    <ClInclude Include="simple-stdatomic-for-vs-clang\threads.h" />
+    <ClInclude Include="smalloc.h" />
+    <ClInclude Include="stat.h" />
+    <ClInclude Include="steadystate.h" />
+    <ClInclude Include="td_error.h" />
+    <ClInclude Include="thread_options.h" />
+    <ClInclude Include="tickmarks.h" />
+    <ClInclude Include="trim.h" />
+    <ClInclude Include="t\debug.h" />
+    <ClInclude Include="unittests\unittest.h" />
+    <ClInclude Include="verify-state.h" />
+    <ClInclude Include="verify.h" />
+    <ClInclude Include="workqueue.h" />
+    <ClInclude Include="zbd.h" />
+    <ClInclude Include="zbd_types.h" />
+    <ClInclude Include="zone-dist.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="pthreads\version.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pthreads\manual\index.html" />
+    <None Include="pthreads\manual\PortabilityIssues.html" />
+    <None Include="pthreads\manual\pthreadCancelableWait.html" />
+    <None Include="pthreads\manual\pthread_attr_init.html" />
+    <None Include="pthreads\manual\pthread_attr_setstackaddr.html" />
+    <None Include="pthreads\manual\pthread_attr_setstacksize.html" />
+    <None Include="pthreads\manual\pthread_barrierattr_init.html" />
+    <None Include="pthreads\manual\pthread_barrierattr_setpshared.html" />
+    <None Include="pthreads\manual\pthread_barrier_init.html" />
+    <None Include="pthreads\manual\pthread_barrier_wait.html" />
+    <None Include="pthreads\manual\pthread_cancel.html" />
+    <None Include="pthreads\manual\pthread_cleanup_push.html" />
+    <None Include="pthreads\manual\pthread_condattr_init.html" />
+    <None Include="pthreads\manual\pthread_condattr_setpshared.html" />
+    <None Include="pthreads\manual\pthread_cond_init.html" />
+    <None Include="pthreads\manual\pthread_create.html" />
+    <None Include="pthreads\manual\pthread_delay_np.html" />
+    <None Include="pthreads\manual\pthread_detach.html" />
+    <None Include="pthreads\manual\pthread_equal.html" />
+    <None Include="pthreads\manual\pthread_exit.html" />
+    <None Include="pthreads\manual\pthread_getunique_np.html" />
+    <None Include="pthreads\manual\pthread_getw32threadhandle_np.html" />
+    <None Include="pthreads\manual\pthread_join.html" />
+    <None Include="pthreads\manual\pthread_key_create.html" />
+    <None Include="pthreads\manual\pthread_kill.html" />
+    <None Include="pthreads\manual\pthread_mutexattr_init.html" />
+    <None Include="pthreads\manual\pthread_mutexattr_setpshared.html" />
+    <None Include="pthreads\manual\pthread_mutex_init.html" />
+    <None Include="pthreads\manual\pthread_num_processors_np.html" />
+    <None Include="pthreads\manual\pthread_once.html" />
+    <None Include="pthreads\manual\pthread_rwlockattr_init.html" />
+    <None Include="pthreads\manual\pthread_rwlockattr_setpshared.html" />
+    <None Include="pthreads\manual\pthread_rwlock_init.html" />
+    <None Include="pthreads\manual\pthread_rwlock_rdlock.html" />
+    <None Include="pthreads\manual\pthread_rwlock_timedrdlock.html" />
+    <None Include="pthreads\manual\pthread_rwlock_timedwrlock.html" />
+    <None Include="pthreads\manual\pthread_rwlock_unlock.html" />
+    <None Include="pthreads\manual\pthread_rwlock_wrlock.html" />
+    <None Include="pthreads\manual\pthread_self.html" />
+    <None Include="pthreads\manual\pthread_setcancelstate.html" />
+    <None Include="pthreads\manual\pthread_setcanceltype.html" />
+    <None Include="pthreads\manual\pthread_setconcurrency.html" />
+    <None Include="pthreads\manual\pthread_setschedparam.html" />
+    <None Include="pthreads\manual\pthread_spin_init.html" />
+    <None Include="pthreads\manual\pthread_spin_lock.html" />
+    <None Include="pthreads\manual\pthread_spin_unlock.html" />
+    <None Include="pthreads\manual\pthread_timechange_handler_np.html" />
+    <None Include="pthreads\manual\pthread_win32_attach_detach_np.html" />
+    <None Include="pthreads\manual\pthread_win32_test_features_np.html" />
+    <None Include="pthreads\manual\sched_getscheduler.html" />
+    <None Include="pthreads\manual\sched_get_priority_max.html" />
+    <None Include="pthreads\manual\sched_setscheduler.html" />
+    <None Include="pthreads\manual\sched_yield.html" />
+    <None Include="pthreads\manual\sem_init.html" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
