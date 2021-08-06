@@ -1,0 +1,3 @@
+[submodule "getopt-for-windows"]
+	path = getopt-for-windows
+	url = https://github.com/tinkugadu/getopt-for-windows.git
