@@ -31,3 +31,6 @@ doc/output
 /TAGS
 /t/zbd/test-zbd-support.log.*
 /t/fuzz/fuzz_parseini
+/x64
+/x86
+/arm64
