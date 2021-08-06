@@ -2,3 +2,6 @@
 	path = getopt-for-windows
 	url = https://github.com/tinkugadu/getopt-for-windows.git
 	branch = master
+[submodule "pthreads"]
+	path = pthreads
+	url = https://github.com/tinkugadu/pthreads.git
