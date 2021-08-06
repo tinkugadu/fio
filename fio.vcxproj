@@ -298,10 +298,6 @@
     <ClInclude Include="flow.h" />
     <ClInclude Include="getopt-for-windows\getopt.h" />
     <ClInclude Include="gettime.h" />
-    <ClInclude Include="gfio.h" />
-    <ClInclude Include="ghelpers.h" />
-    <ClInclude Include="goptions.h" />
-    <ClInclude Include="graph.h" />
     <ClInclude Include="hash.h" />
     <ClInclude Include="helpers.h" />
     <ClInclude Include="helper_thread.h" />
