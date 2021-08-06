@@ -5,6 +5,7 @@
 [submodule "pthreads"]
 	path = pthreads
 	url = https://github.com/tinkugadu/pthreads.git
+	branch = master
 [submodule "simple-stdatomic-for-VS-Clang"]
 	path = simple-stdatomic-for-VS-Clang
 	url = https://github.com/tinkugadu/simple-stdatomic-for-VS-Clang.git
